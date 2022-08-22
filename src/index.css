@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.header span {
+  margin: 0.5rem;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2em;
+}
+
+.span-one {
+  color: #4eacff;
+}
+
+.span-two {
+  color: #00c8ff;
+}
+.span-three {
+  color: #00deea;
+}
+
+form {
+  padding: 1.5rem;
+}
+
+form label {
+  font-size: 0.9em;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 1.2em;
+}
+
+form button {
+  background: none;
+  border: #00deea solid 2px;
+  padding: 0.5rem 1rem;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #00deea;
+  color: white;
+}
+
+.card {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.task-container,
+.task-container-done {
+  padding: 1rem;
+  transition: 0.3s all;
+}
+
+.task-container:nth-child(odd),
+.task-container-done:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+.task-container:nth-child(even),
+.task-container-done:nth-child(even) {
+  border: solid 2px aliceblue;
+}
+
+.task-container-done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card,
+  form {
+    width: 50%;
+  }
+}
+
+.icons {
+  color: #4eacff;
+  cursor: pointer;
+  font-size: 1.3em;
+}
